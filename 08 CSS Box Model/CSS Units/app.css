@@ -1,0 +1,75 @@
+html {
+/* rem depend on the root font-size */
+  font-size: 30px;
+}
+
+
+section {
+  background-color: bisque;
+  width: 400px;
+  height: 800px;
+}
+
+div {
+  background-color: pink;
+  /* 50% of the parent element */
+  width: 50%;
+  height: 50%;
+}
+
+h1 {
+  font-size: 40px;
+  border: 1px solid black;
+  /* 200% of the font-size since percentage depends on case */
+  line-height: 200%;
+}
+
+h2 {
+  /* Twice the font size of it's parent element */
+  font-size: 2 em;
+  /* margin left changes refers to the font-size of the elemetn */
+  margin-left: 1em;
+}
+h3 {
+  font-size: 1.5em;
+}
+#ems p {
+  font-size: 1 em;
+}
+#ems article {
+  font-size: 20px;
+}
+
+#ems button {
+  /* depends on article font-size and grows with the font-size of the article */
+  font-size: 1em;
+  padding: 0 1em;
+  /* Depends on font-size */
+  border-radius: 0.5em;
+  background-color: aqua;
+}
+
+
+#ems ul {
+  /* nested ul -> em can actually STACK and scale base on parent!! */
+  font-size: 1.5em;
+ } 
+
+
+
+/* rems: only choose from the ROOT element font-size */
+#rems h2{
+  font-size: 3 rem;
+}
+
+#rems h3{
+  font-size: 2 rem;
+}
+
+#rems ul{
+  font-size: 0.8 rem;
+}
+
+#rems button{
+  font-size: 1.5 rem;
+}

@@ -1,0 +1,37 @@
+/* Example of block */
+h1 {
+  background-color: yellow;
+  border: 1px solid black;
+  display: inline;
+  /* width height and margin is respected if not in inline (it's in block)  */
+  width: 300px;
+  height: 200px;
+  margin: 100px;
+}
+
+/* Example of inline element */
+
+span {
+  background-color: paleturquoise;
+  border: 1px solid black;
+  /* Forces a break */
+  /* display: block; */
+  /* Inline elements: width is ignored */
+  /* Padding won't push the content away */
+  padding: 10px;
+  /* Margin is respected from other content */
+  margin: 50px;
+  /* can set the display to none */
+  display: none;
+}
+
+div {
+  height: 200px;
+  width: 200px;
+  background-color: aqua;
+  border: 1px solid black;
+  /* behave like an inline block */
+  display: inline-block;
+  margin: 50px;
+
+}
