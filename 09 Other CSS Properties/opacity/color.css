@@ -1,0 +1,23 @@
+section {
+  width: 500px;
+  height: 500px;
+  background-color: magenta;
+}
+
+#rgba {
+  width: 50%;
+  height: 50%;
+  /* transparency: transparent will only affect the background color */
+  /* background-color: rgb(255, 255, 255, 0.7); */
+  background-color: #00cca0b9;
+  /* Last two digits in hex control the transparency */
+}
+
+/* v.s. opacity */
+#opacity {
+  width: 50%;
+  height: 50%;
+  background-color: yellow;
+  /* Opacity will affect the entire element */
+  opacity: 0.3;
+}

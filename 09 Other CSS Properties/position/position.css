@@ -1,0 +1,48 @@
+div {
+  width: 100px;
+  height: 100px;
+  background-color: #3d405b;
+  border: 2px solid black;
+  margin: 10px;
+  display: inline-block;
+}
+
+#middle {
+  background-color: #81b29a;
+}
+
+#static #middle {
+  /* static is the default */
+  position: static;
+  /* top, left, bottom, right ... have no effect */
+  top: 100px;
+}
+
+#relative #middle {
+  position: relative;
+  /* relative push the element from it's origin position */
+  /* Positioned relatively to where it would be as normal */
+  top: 50px; /* So top is pushing the element down (100px top to original position) */
+  left: 50px; /* So it's actually in the right */
+}
+
+/* Our positioned ancestor  */
+#absolute {
+  position: relative;
+}
+
+#absolute #middle {
+  /* only see two boxes becuase they are stacked */
+  position: absolute;
+  /* Relative to its closest 'positioned' ancestor (sth other than static) */
+  top: 50px;
+  left: 50px;
+}
+
+#fixed #middle {
+  /* Position relative to the containing box */
+  /* similar to relative but not with the original state */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
