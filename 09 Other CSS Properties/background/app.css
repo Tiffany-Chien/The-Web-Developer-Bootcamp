@@ -1,0 +1,16 @@
+section {
+  width: 80%;
+  height: 800px;
+  background-image: url(https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  margin: 0 auto;
+  /* cover: Shrinks down image to fit */
+  /* contain: fit the image as large as possible with repeat */
+  background-size: cover;
+  /* Using the position from the start */
+  background-position: bottom;
+}
+
+h1 {
+  font-size: 100px;
+  color: white;
+}
